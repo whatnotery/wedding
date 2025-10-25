@@ -21,7 +21,7 @@
 title: Hannah & Jos' Wedding
 email: hannah.jos.wedding@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hannah & Jos are getting hitched 10-10-26
+  Hannah & Jos are getting hitched
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
