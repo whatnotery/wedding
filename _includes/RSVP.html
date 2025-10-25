@@ -1,11 +1,18 @@
-<div class="flex flex-col pl-32 font-serif text-3xl font-medium text-gold">
+<h1
+    class="font-serif text-5xl lg:text-6xl font-medium text-gold mb-4 sm:mb-6 px-4 sm:px-8"
+>
+    RSVP
+</h1>
+<div
+    class="flex flex-col px-4 sm:px-8 lg:px-32 font-serif text-lg sm:text-xl lg:text-2xl font-medium text-gold"
+>
     <form action="https://api.web3forms.com/submit" method="post" id="form">
         <input
             type="hidden"
             name="access_key"
             value="af1795e8-ed04-4502-88b3-169e28f8be7d"
         />
-        <div class="flex flex-col">
+        <div class="flex flex-col space-y-4 sm:space-y-6">
             <div>
                 <label for="your_name">Your Name</label>
                 <input
@@ -50,56 +57,68 @@
                 <label for="rsvp_2">Can't Attend</label>
             </div>
         </div>
-        <div id="guest_info" class="py-8" hidden>
+        <div id="guest_info" class="py-8 space-y-4 sm:space-y-6" hidden>
             <div>
                 <label for="dietary_preference">Your Dietary Preference</label>
-                <input
-                    type="radio"
-                    id="dietary_preference_0"
-                    name="dietary_preference"
-                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
-                    value="Omnivore"
-                />
-                <label for="dietary_preference_0">Omnivore</label>
-                <input
-                    type="radio"
-                    id="dietary_preference_1"
-                    name="dietary_preference"
-                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
-                    value="Vegetarian"
-                />
-                <label for="dietary_preference_1">Vegetarian </label>
-                <input
-                    type="radio"
-                    id="dietary_preference_2"
-                    name="dietary_preference"
-                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
-                    value="Vegan"
-                />
-                <label for="dietary_preference_2">Vegan</label>
+                <div>
+                    <input
+                        type="radio"
+                        id="dietary_preference_0"
+                        name="dietary_preference"
+                        class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                        value="Omnivore"
+                    />
+                    <label for="dietary_preference_0">Omnivore</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="dietary_preference_1"
+                        name="dietary_preference"
+                        class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                        value="Vegetarian"
+                    />
+                    <label for="dietary_preference_1">Vegetarian </label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="dietary_preference_2"
+                        name="dietary_preference"
+                        class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                        value="Vegan"
+                    />
+                    <label for="dietary_preference_2">Vegan</label>
+                </div>
             </div>
 
             <div>
                 <label for="will_you_be_drinking">Will you be drinking</label>
-                <input
-                    type="radio"
-                    id="will_you_be_drinking_0"
-                    name="will_you_be_drinking"
-                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
-                    value="Yes"
-                />
-                <label for="will_you_be_drinking_0">Yes</label>
-                <input
-                    type="radio"
-                    id="will_you_be_drinking_1"
-                    name="will_you_be_drinking"
-                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
-                    value="No"
-                />
-                <label for="will_you_be_drinking_1">No</label>
+                <div>
+                    <input
+                        type="radio"
+                        id="will_you_be_drinking_0"
+                        name="will_you_be_drinking"
+                        class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                        value="Yes"
+                    />
+                    <label for="will_you_be_drinking_0">Yes</label>
+                </div>
+                <div>
+                    <input
+                        type="radio"
+                        id="will_you_be_drinking_1"
+                        name="will_you_be_drinking"
+                        class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                        value="No"
+                    />
+                    <label for="will_you_be_drinking_1">No</label>
+                </div>
             </div>
         </div>
-        <div id="plus_one_info" hidden>
+        <div id="plus_one_info" class="py-8 space-y-4 sm:space-y-6" hidden>
             <div>
                 <label for="_1_s_name">+1's Name</label>
                 <input
@@ -113,51 +132,61 @@
                 <label for="+1's_dietary_preference"
                     >+1's Dietary Preference</label
                 >
-                <input
-                    type="radio"
-                    id="_1_s_dietary_preference_0"
-                    name="+1's_dietary_preference"
-                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
-                    value="Omnivore"
-                />
-                <label for="_1_s_dietary_preference_0">Omnivore</label>
-                <input
-                    type="radio"
-                    id="_1_s_dietary_preference_1"
-                    name="+1's_dietary_preference"
-                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
-                    value="Vegetarian"
-                />
-                <label for="_1_s_dietary_preference_1">Vegetarian </label>
-                <input
-                    type="radio"
-                    id="_1_s_dietary_preference_2"
-                    name="+1's_dietary_preference"
-                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
-                    value="Vegan"
-                />
-                <label for="_1_s_dietary_preference_2">Vegan</label>
+                <div>
+                    <input
+                        type="radio"
+                        id="_1_s_dietary_preference_0"
+                        name="+1's_dietary_preference"
+                        class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                        value="Omnivore"
+                    />
+                    <label for="_1_s_dietary_preference_0">Omnivore</label>
+                </div>
+                <div>
+                    <input
+                        type="radio"
+                        id="_1_s_dietary_preference_1"
+                        name="+1's_dietary_preference"
+                        class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                        value="Vegetarian"
+                    />
+                    <label for="_1_s_dietary_preference_1">Vegetarian </label>
+                </div>
+                <div>
+                    <input
+                        type="radio"
+                        id="_1_s_dietary_preference_2"
+                        name="+1's_dietary_preference"
+                        class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                        value="Vegan"
+                    />
+                    <label for="_1_s_dietary_preference_2">Vegan</label>
+                </div>
             </div>
             <div>
                 <label for="will_your_1_be_drinking"
                     >Will your +1 be drinking</label
                 >
-                <input
-                    type="radio"
-                    id="will_your_1_be_drinking_0"
-                    name="will_your_+1_be_drinking"
-                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
-                    value="Yes"
-                />
-                <label for="will_your_1_be_drinking_0">Yes</label>
-                <input
-                    type="radio"
-                    id="will_your_1_be_drinking_1"
-                    name="will_your_+1_be_drinking"
-                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
-                    value="No"
-                />
-                <label for="will_your_1_be_drinking_1">No</label>
+                <div>
+                    <input
+                        type="radio"
+                        id="will_your_1_be_drinking_0"
+                        name="will_your_+1_be_drinking"
+                        class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                        value="Yes"
+                    />
+                    <label for="will_your_1_be_drinking_0">Yes</label>
+                </div>
+                <div>
+                    <input
+                        type="radio"
+                        id="will_your_1_be_drinking_1"
+                        name="will_your_+1_be_drinking"
+                        class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                        value="No"
+                    />
+                    <label for="will_your_1_be_drinking_1">No</label>
+                </div>
             </div>
         </div>
         <button class="mt-6 p-4 border border-gold rounded-full" type="submit">
@@ -212,22 +241,4 @@
             handleRSVPChange();
         });
     </script>
-
-    <div class="flex flex-row justify-evenly pt-24">
-        <img
-            class="aspect-16/9 max-w-96"
-            src="{{ '/assets/img/rsvp_1.jpg' | relative_url }}"
-        />
-
-        <div class="flex flex-col justify-between">
-            <img
-                class="aspect-sqaure max-w-96"
-                src="{{ '/assets/img/rsvp_2.jpg' | relative_url }}"
-            />
-            <img
-                class="aspect-sqaure max-w-96"
-                src="{{ '/assets/img/rsvp_3.jpg' | relative_url }}"
-            />
-        </div>
-    </div>
 </div>

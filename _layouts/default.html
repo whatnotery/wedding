@@ -3,33 +3,65 @@
     <head>
         {% include head.html %}
     </head>
-    <body>
-        <main
-            class="py-8 w-full flex flex-col justify-center align-center font-serif"
-        >
-            <section class="py-5">{% include header.html %}</section>
-            <section class="py-5">
-                <h1
-                    class="font-serif text-5xl md:text-6xl font-medium text-gold mb-4 leading-tight pl-16"
-                >
-                    Story
-                </h1>
+    <body class="w-vw mx-auto">
+        <main>
+            <section
+                class="max-w-vw mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 flex flex-col font-serif"
+            >
+                {% include header.html %}
+            </section>
+            <img
+                class="aspect-2.35/1 w-full max-w-full"
+                src="{{ '/assets/img/story_2.jpg' | relative_url }}"
+            />
+
+            <section
+                class="max-w-vw mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 flex flex-col font-serif"
+            >
                 {% include story.html %}
             </section>
-            <section class="py-5">
-                <h1
-                    class="font-serif text-5xl md:text-6xl font-medium text-gold mb-4 leading-tight pl-16"
-                >
-                    RSVP
-                </h1>
+            <div
+                class="flex flex-col sm:flex-row justify-evenly gap-4 sm:gap-8 px-4 sm:px-0"
+            >
+                <img
+                    class="aspect-square w-full sm:max-w-sm"
+                    src="{{ '/assets/img/header_1.jpg' | relative_url }}"
+                />
+                <img
+                    class="aspect-square w-full sm:max-w-sm"
+                    src="{{ '/assets/img/header_2.jpg' | relative_url }}"
+                />
+                <img
+                    class="aspect-square w-full sm:max-w-sm"
+                    src="{{ '/assets/img/header_3.jpg' | relative_url }}"
+                />
+            </div>
+            <section
+                class="max-w-vw mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 flex flex-col font-serif"
+            >
                 {% include RSVP.html %}
             </section>
-            <section class="py-5">
-                <h1
-                    class="font-serif text-5xl md:text-6xl font-medium text-gold mb-4 leading-tight pl-16"
-                >
-                    Registry
-                </h1>
+            <div
+                class="flex flex-col md:flex-row justify-evenly gap-4 sm:gap-8 pt-8 sm:pt-16 px-4 sm:px-0"
+            >
+                <img
+                    class="aspect-16/9 w-full sm:max-w-96"
+                    src="{{ '/assets/img/rsvp_1.jpg' | relative_url }}"
+                />
+                <div class="flex flex-col gap-4 sm:gap-8">
+                    <img
+                        class="aspect-square w-full sm:max-w-96"
+                        src="{{ '/assets/img/rsvp_2.jpg' | relative_url }}"
+                    />
+                    <img
+                        class="aspect-square w-full sm:max-w-96"
+                        src="{{ '/assets/img/rsvp_3.jpg' | relative_url }}"
+                    />
+                </div>
+            </div>
+            <section
+                class="max-w-vw mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 flex flex-col font-serif"
+            >
                 {% include registry.html %}
             </section>
         </main>
