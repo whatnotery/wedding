@@ -1,0 +1,39 @@
+<meta charset="utf-8" />
+<title>{{site.title}}</title>
+<meta name="author" content="{{site.title}}" />
+<meta name="description" content="{{site.description}}" />
+<link rel="stylesheet" href="{{site.baseurl}}/assets/style.css" />
+<meta
+    content="{{ '/assets/img/preview.jpg' | relative_url }}"
+    property="og:image"
+/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Crimson+Text:wght@300;400;500&display=swap"
+    rel="stylesheet"
+/>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    sage: "#8B9A7A",
+                    "sage-light": "#A8B89A",
+                    "sage-dark": "#6B7A5A",
+                    cream: "#F5F3F0",
+                    gold: "#9b843c",
+                },
+                fontFamily: {
+                    serif: ["Inria Serif", "serif"],
+                    body: ["Crimson Text", "serif"],
+                },
+            },
+        },
+    };
+</script>

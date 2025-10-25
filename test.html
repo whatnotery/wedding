@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hannah & Jos - Wedding</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Crimson+Text:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            sage: "#8B9A7A",
+                            "sage-light": "#A8B89A",
+                            "sage-dark": "#6B7A5A",
+                            cream: "#F5F3F0",
+                            gold: "#D4AF37",
+                        },
+                        fontFamily: {
+                            serif: ["Inria Serif", "serif"],
+                            body: ["Crimson Text", "serif"],
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="bg-sage text-cream font-body overflow-x-hidden">
+        <!-- Header Section -->
+        <section class="min-h-screen relative px-8 py-16 flex">
+            <!-- Wedding Details -->
+            <div class="relative z-10 max-w-md">
+                <h1
+                    class="font-serif text-5xl md:text-6xl font-medium text-gold mb-4 leading-tight"
+                >
+                    Hannah & Jos
+                </h1>
+                <div class="text-gold text-xl md:text-2xl space-y-2 mb-4">
+                    <p class="font-serif">10-10-2026</p>
+                    <p class="text-lg">6:00pm at Gratz Park</p>
+                    <p class="text-lg">Reception to follow</p>
+                    <p class="text-lg">at Darling</p>
+                </div>
+            </div>
+            <!-- Removed all photo elements from header section -->
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="px-8 py-20 relative">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-serif text-4xl md:text-5xl text-gold mb-12">
+                    Our Story
+                </h2>
+
+                <!-- Removed photo grid and kept only text content -->
+                <div
+                    class="text-cream leading-relaxed space-y-4 text-sm max-w-3xl"
+                >
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </p>
+
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi architecto beatae vitae dicta sunt explicabo. Ut
+                        enim ad minima veniam, quis nostrum exercitationem ullam
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea
+                        commodi consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <!-- Removed bottom photo collage -->
+        </section>
+
+        <!-- RSVP Section -->
+        <section class="px-8 py-20 bg-gradient-to-b from-sage to-sage-dark">
+            <div class="max-w-2xl mx-auto">
+                <h2
+                    class="font-serif text-4xl md:text-5xl text-gold mb-12 text-center"
+                >
+                    RSVP
+                </h2>
+
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label
+                                for="name"
+                                class="block text-gold font-medium mb-2 text-lg"
+                                >Name</label
+                            >
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="w-full px-4 py-3 bg-cream text-sage-dark rounded border-0 focus:ring-2 focus:ring-gold"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                for="rsvp"
+                                class="block text-gold font-medium mb-2 text-lg"
+                                >RSVP</label
+                            >
+                            <select
+                                id="rsvp"
+                                name="rsvp"
+                                class="w-full px-4 py-3 bg-cream text-sage-dark rounded border-0 focus:ring-2 focus:ring-gold"
+                            >
+                                <option value="">Please select</option>
+                                <option value="attending">Attending</option>
+                                <option value="not-attending">
+                                    Not Attending
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label
+                            for="plus-one"
+                            class="block text-gold font-medium mb-2 text-lg"
+                            >+1 Name</label
+                        >
+                        <input
+                            type="text"
+                            id="plus-one"
+                            name="plus-one"
+                            class="w-full px-4 py-3 bg-cream text-sage-dark rounded border-0 focus:ring-2 focus:ring-gold"
+                        />
+                    </div>
+
+                    <div>
+                        <label
+                            for="dietary"
+                            class="block text-gold font-medium mb-2 text-lg"
+                            >Dietary Preferences</label
+                        >
+                        <textarea
+                            id="dietary"
+                            name="dietary"
+                            rows="3"
+                            class="w-full px-4 py-3 bg-cream text-sage-dark rounded border-0 focus:ring-2 focus:ring-gold resize-none"
+                        ></textarea>
+                    </div>
+
+                    <div>
+                        <label
+                            for="drinking"
+                            class="block text-gold font-medium mb-2 text-lg"
+                            >Drinking Preferences</label
+                        >
+                        <textarea
+                            id="drinking"
+                            name="drinking"
+                            rows="3"
+                            class="w-full px-4 py-3 bg-cream text-sage-dark rounded border-0 focus:ring-2 focus:ring-gold resize-none"
+                        ></textarea>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="w-full bg-gold text-sage-dark py-4 px-6 rounded font-medium text-lg hover:bg-yellow-500 transition-colors duration-200"
+                    >
+                        Send RSVP
+                    </button>
+                </form>
+            </div>
+            <!-- Removed all photo elements from RSVP section -->
+        </section>
+
+        <!-- Registry Section -->
+        <section
+            class="px-8 py-20 bg-gradient-to-b from-sage-dark to-slate-900 text-center"
+        >
+            <h2 class="font-serif text-4xl md:text-5xl text-gold mb-8">
+                Registry
+            </h2>
+            <p
+                class="text-cream text-lg max-w-2xl mx-auto mb-8 leading-relaxed"
+            >
+                Your presence at our wedding is the greatest gift of all.
+                However, if you wish to honor us with a gift, we have registered
+                at a few of our favorite places.
+            </p>
+            <button
+                class="bg-gold text-sage-dark px-8 py-3 rounded font-medium text-lg hover:bg-yellow-500 transition-colors duration-200"
+            >
+                View Registry
+            </button>
+        </section>
+    </body>
+</html>

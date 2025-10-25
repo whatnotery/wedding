@@ -1,0 +1,233 @@
+<div class="flex flex-col pl-32 font-serif text-3xl font-medium text-gold">
+    <form action="https://api.web3forms.com/submit" method="post" id="form">
+        <input
+            type="hidden"
+            name="access_key"
+            value="af1795e8-ed04-4502-88b3-169e28f8be7d"
+        />
+        <div class="flex flex-col">
+            <div>
+                <label for="your_name">Your Name</label>
+                <input
+                    type="text"
+                    id="your_name"
+                    name="your_name"
+                    class="appearance-none bg-transparent focus:outline-none border-b-2 border-gold border-dashed"
+                    required
+                />
+            </div>
+            <div>
+                <input
+                    type="radio"
+                    id="rsvp_0"
+                    name="rsvp"
+                    value="Attending"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    required
+                />
+                <label for="rsvp_0">Attending</label>
+            </div>
+            <div>
+                <input
+                    type="radio"
+                    id="rsvp_1"
+                    name="rsvp"
+                    value="Attending + 1"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    required
+                />
+                <label for="rsvp_1">Attending + 1</label>
+            </div>
+            <div>
+                <input
+                    type="radio"
+                    id="rsvp_2"
+                    name="rsvp"
+                    value="Can't Attend"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    required
+                />
+                <label for="rsvp_2">Can't Attend</label>
+            </div>
+        </div>
+        <div id="guest_info" class="py-8" hidden>
+            <div>
+                <label for="dietary_preference">Your Dietary Preference</label>
+                <input
+                    type="radio"
+                    id="dietary_preference_0"
+                    name="dietary_preference"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    value="Omnivore"
+                />
+                <label for="dietary_preference_0">Omnivore</label>
+                <input
+                    type="radio"
+                    id="dietary_preference_1"
+                    name="dietary_preference"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    value="Vegetarian"
+                />
+                <label for="dietary_preference_1">Vegetarian </label>
+                <input
+                    type="radio"
+                    id="dietary_preference_2"
+                    name="dietary_preference"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    value="Vegan"
+                />
+                <label for="dietary_preference_2">Vegan</label>
+            </div>
+
+            <div>
+                <label for="will_you_be_drinking">Will you be drinking</label>
+                <input
+                    type="radio"
+                    id="will_you_be_drinking_0"
+                    name="will_you_be_drinking"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    value="Yes"
+                />
+                <label for="will_you_be_drinking_0">Yes</label>
+                <input
+                    type="radio"
+                    id="will_you_be_drinking_1"
+                    name="will_you_be_drinking"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    value="No"
+                />
+                <label for="will_you_be_drinking_1">No</label>
+            </div>
+        </div>
+        <div id="plus_one_info" hidden>
+            <div>
+                <label for="_1_s_name">+1's Name</label>
+                <input
+                    type="text"
+                    id="_1_s_name"
+                    name="+1's_name"
+                    class="appearance-none bg-transparent focus:outline-none border-b-2 border-gold border-dashed"
+                />
+            </div>
+            <div>
+                <label for="+1's_dietary_preference"
+                    >+1's Dietary Preference</label
+                >
+                <input
+                    type="radio"
+                    id="_1_s_dietary_preference_0"
+                    name="+1's_dietary_preference"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    value="Omnivore"
+                />
+                <label for="_1_s_dietary_preference_0">Omnivore</label>
+                <input
+                    type="radio"
+                    id="_1_s_dietary_preference_1"
+                    name="+1's_dietary_preference"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    value="Vegetarian"
+                />
+                <label for="_1_s_dietary_preference_1">Vegetarian </label>
+                <input
+                    type="radio"
+                    id="_1_s_dietary_preference_2"
+                    name="+1's_dietary_preference"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    value="Vegan"
+                />
+                <label for="_1_s_dietary_preference_2">Vegan</label>
+            </div>
+            <div>
+                <label for="will_your_1_be_drinking"
+                    >Will your +1 be drinking</label
+                >
+                <input
+                    type="radio"
+                    id="will_your_1_be_drinking_0"
+                    name="will_your_+1_be_drinking"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    value="Yes"
+                />
+                <label for="will_your_1_be_drinking_0">Yes</label>
+                <input
+                    type="radio"
+                    id="will_your_1_be_drinking_1"
+                    name="will_your_+1_be_drinking"
+                    class="relative appearance-none shrink-0 mt-4 w-6 h-6 border-2 border-gold rounded-full checked:bg-gold"
+                    value="No"
+                />
+                <label for="will_your_1_be_drinking_1">No</label>
+            </div>
+        </div>
+        <button class="mt-6 p-4 border border-gold rounded-full" type="submit">
+            Send RSVP
+        </button>
+    </form>
+    <script>
+        // Function to handle RSVP radio button changes
+        function handleRSVPChange() {
+            const guestInfo = document.getElementById("guest_info");
+            const plusOneInfo = document.getElementById("plus_one_info");
+            const radioButtons = document.querySelectorAll(
+                'input[type="radio"]',
+            );
+
+            // Check which radio button is checked
+            if (document.getElementById("rsvp_0").checked) {
+                // Attending - show guest info only
+                guestInfo.hidden = false;
+                plusOneInfo.hidden = true;
+            } else if (document.getElementById("rsvp_1").checked) {
+                // Attending + 1 - show both guest info and plus one info
+                guestInfo.hidden = false;
+                plusOneInfo.hidden = false;
+            } else if (document.getElementById("rsvp_2").checked) {
+                // Can't Attend - hide both sections
+                guestInfo.hidden = true;
+                plusOneInfo.hidden = true;
+                radioButtons.forEach((radio) => {
+                    if (radio.id == "rsvp_2") {
+                        radio.checked = true;
+                    } else {
+                        radio.checked = false;
+                    }
+                });
+            }
+        }
+
+        // Add event listeners to all RSVP radio buttons
+        document
+            .getElementById("rsvp_0")
+            .addEventListener("change", handleRSVPChange);
+        document
+            .getElementById("rsvp_1")
+            .addEventListener("change", handleRSVPChange);
+        document
+            .getElementById("rsvp_2")
+            .addEventListener("change", handleRSVPChange);
+
+        // Initialize the form state on page load
+        document.addEventListener("DOMContentLoaded", function () {
+            handleRSVPChange();
+        });
+    </script>
+
+    <div class="flex flex-row justify-evenly pt-24">
+        <img
+            class="aspect-16/9 max-w-96"
+            src="{{ '/assets/img/rsvp_1.jpg' | relative_url }}"
+        />
+
+        <div class="flex flex-col justify-between">
+            <img
+                class="aspect-sqaure max-w-96"
+                src="{{ '/assets/img/rsvp_2.jpg' | relative_url }}"
+            />
+            <img
+                class="aspect-sqaure max-w-96"
+                src="{{ '/assets/img/rsvp_3.jpg' | relative_url }}"
+            />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <main
+            class="py-8 w-full flex flex-col justify-center align-center font-serif"
+        >
+            <section class="py-5">{% include header.html %}</section>
+            <section class="py-5">
+                <h1
+                    class="font-serif text-5xl md:text-6xl font-medium text-gold mb-4 leading-tight pl-16"
+                >
+                    Story
+                </h1>
+                {% include story.html %}
+            </section>
+            <section class="py-5">
+                <h1
+                    class="font-serif text-5xl md:text-6xl font-medium text-gold mb-4 leading-tight pl-16"
+                >
+                    RSVP
+                </h1>
+                {% include rsvp.html %}
+            </section>
+            <section class="py-5">
+                <h1
+                    class="font-serif text-5xl md:text-6xl font-medium text-gold mb-4 leading-tight pl-16"
+                >
+                    Registry
+                </h1>
+                {% include registry.html %}
+            </section>
+        </main>
+    </body>
+</html>
