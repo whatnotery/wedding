@@ -4,6 +4,7 @@ source "https://rubygems.org"
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
 #
 gem 'github-pages'
+gem 'faraday-retry'
 
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
