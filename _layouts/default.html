@@ -42,19 +42,21 @@
                 {% include RSVP.html %}
             </section>
             <div
-                class="flex flex-col md:flex-row items-center justify-evenly gap-4 sm:gap-8 pt-8 sm:pt-16 px-4 sm:px-0"
+                class="flex flex-col md:flex-row justify-evenly items-center gap-4 sm:gap-8 px-4 sm:px-0"
             >
                 <img
                     class="aspect-16/9 w-full sm:max-w-96"
                     src="{{ '/assets/img/rsvp_1.jpg' | relative_url }}"
                 />
-                <div class="flex flex-col justify-between">
+                <div
+                    class="flex flex-col justify-between gap-4 sm:gap-8 px-4 sm:px-0"
+                >
                     <img
-                        class="w-full sm:max-w-96"
+                        class="aspect-2/3 sm:max-w-96"
                         src="{{ '/assets/img/rsvp_2.jpg' | relative_url }}"
                     />
                     <img
-                        class="w-full sm:max-w-96"
+                        class="aspect-2/3 sm:max-w-96"
                         src="{{ '/assets/img/rsvp_3.jpg' | relative_url }}"
                     />
                 </div>
