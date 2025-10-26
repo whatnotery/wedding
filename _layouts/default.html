@@ -16,23 +16,24 @@
             />
 
             <section
-                class="max-w-vw mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 flex flex-col font-serif"
+                class="max-w-vw mx-auto flex flex-col px-4 sm:px-6 lg:px-8 py-4 sm:py-8 font-serif"
             >
                 {% include story.html %}
             </section>
             <div
-                class="flex flex-col md:flex-row items-center justify-evenly gap-4 sm:gap-8 px-4 sm:px-0"
+                class="max-w-vw mx-auto flex flex-col md:flex-row items-center justify-evenly gap-4"
             >
                 <img
-                    class="aspect-square w-full sm:max-w-sm"
+                    class="aspect-square max-w-xs"
                     src="{{ '/assets/img/header_1.jpg' | relative_url }}"
                 />
                 <img
-                    class="aspect-square w-full sm:max-w-sm"
+                    class="aspect-square max-w-xs"
                     src="{{ '/assets/img/header_2.jpg' | relative_url }}"
                 />
-                <img id="RSVP"
-                    class="lg:flex md:hidden aspect-square w-full sm:max-w-sm"
+                <img
+                    id="RSVP"
+                    class="lg:flex md:hidden aspect-square max-w-xs"
                     src="{{ '/assets/img/header_3.jpg' | relative_url }}"
                 />
             </div>
@@ -42,7 +43,7 @@
                 {% include RSVP.html %}
             </section>
             <div
-                class="flex flex-col md:flex-row justify-evenly items-center gap-4 sm:gap-8 px-4 sm:px-0"
+                class="flex flex-col md:flex-row justify-evenly items-center gap-4 sm:gap-8 px-4 sm:px-0 pt-6"
             >
                 <img
                     class="aspect-16/9 w-full sm:max-w-96"
